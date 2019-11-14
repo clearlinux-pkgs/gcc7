@@ -3,7 +3,7 @@
 %define libstdcxx_maj 6
 %define libstdcxx_full 6.0.24
 %define isl_version 0.16.1
-%define gccver 7.5.1
+%define gccver 7.5.0
 %define gccpath gcc-7.5.0
 
 # Highest optimisation ABI we target
