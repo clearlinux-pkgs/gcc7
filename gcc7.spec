@@ -3,8 +3,8 @@
 %define libstdcxx_maj 6
 %define libstdcxx_full 6.0.24
 %define isl_version 0.16.1
-%define gccver 7.3.1
-%define gccpath gcc-7.3.0
+%define gccver 7.5.1
+%define gccpath gcc-7.5.0
 
 # Highest optimisation ABI we target
 %define mtune haswell
@@ -15,10 +15,10 @@
 %define abi_package %{nil}
 
 Name     : gcc7
-Version  : 7.3.0
+Version  : 7.5.0
 Release  : 438
 URL      : http://www.gnu.org/software/gcc/
-Source0  : https://mirrors.kernel.org/gnu/gcc/gcc-7.3.0/gcc-7.3.0.tar.gz
+Source0  : https://mirrors.kernel.org/gnu/gcc/gcc-7.5.0/gcc-7.5.0.tar.gz
 Source1  : https://gcc.gnu.org/pub/gcc/infrastructure/isl-0.16.1.tar.bz2
 Source2  : DATESTAMP
 Source3  : REVISION
@@ -178,7 +178,7 @@ GNU cc and gcc C compilers.
 
 %prep
 %setup -q -n %{gccpath}
-%patch0 -p1
+#%patch0 -p1
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
